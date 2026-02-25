@@ -239,7 +239,7 @@ p{
 
 .top-banner{
     width: 100%;
-    background: url(../Images/background/image1.jpg) no-repeat center;
+    background: url(./Images/background/image1.jpg) no-repeat center;
     background-size: cover;
     padding: 21.875rem 0 9.375rem;
 }
@@ -405,7 +405,7 @@ FAQ section design
 
 .book-food{
     width:100%;
-    background: url('../Images/food items/img4.jpg') no-repeat center ;
+    background: url('./Images/food items/img4.jpg') no-repeat center ;
     background-size: cover;
     background-attachment: fixed;
     background-position: 0 71.9125px;
