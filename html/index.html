@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankita's Restraunt</title>
+
+    <!--CDN links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!--style sheets-->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--Header design-->
+    <!--navbar-light - this class makes the background light color 
+     bg-light - this class makes the background light and little dark including text -->
+
+    <nav class="navbar navbar-expand-lg  navigation-wrap">
+        <div class="container-fluid" style="margin-left: 10px;">
+            <a class="navbar-brand" href="#">
+                <img src="../Images/logo2.png" alt="Restraunt" width="120px" height="60px"
+                    class="d-inline-block align-text-top">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-stream navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText" style="margin-left: 20px;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#explore">Explore dishes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#rooms" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"> Others </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#deserts">Birthday parties</a></li>
+                            <li><a class="dropdown-item" href="#wd">wedding orders</a></li>
+                            <li><a class="dropdown-item" href="#faq">FAQs</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <button type="button" class="main-btn btn btn-outline-danger">Order Now</button>
+                    </li>
+
+
+                </ul>
+            </div>
+            <form class="d-flex" style="margin-right: 20px;">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="sr-btn btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!--section-1 top banner-->
+    <section id="home">
+        <div class="container-fluid px-0 top-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6">
+                        <h1>Elevate Your Dining Experience with Our Culinary Masterpieces</h1>
+                        <h2>Savor the Flavors of the World at Your Table</h2>
+                        <p>At our restaurant, we pride ourselves on offering a diverse culinary experience that caters
+                            to every palate. Our menu is a vibrant tapestry of international flavors, with dishes that
+                            range from the exotic to the comforting. Each bite is a testament to the artistry of our
+                            chefs, who skillfully blend traditional recipes with innovative twists. Our ambiance is warm
+                            and inviting, creating an atmosphere that is as comforting as it is sophisticated. Whether
+                            you're seeking a romantic dinner for two or a lively gathering with friends, our restaurant
+                            promises an unforgettable dining experience that will leave you craving for more.
+                        </p>
+                        <div class="mt-4">
+                            <button type="button" class="btn btn-danger btn-lg main-btn">Order Now <i
+                                    class="fa-solid fa-cart-shopping ps-3"></i></button>
+                            <button type="button" class="btn btn-lg white-btn ms-lg-4 mt-lg-0 mt-4">Explore <i
+                                    class="fa-solid fa-magnifying-glass ps-3"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--section-2 counter-->
+
+    <section id="counter">
+        <section class="counter-section">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h2>
+                            <span id="count1"></span>+
+                        </h2>
+                        <p>SAVINGS</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h2>
+                            <span id="count2"></span>+
+                        </h2>
+                        <p>PHOTOS</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h2>
+                            <span id="count3"></span>+
+                        </h2>
+                        <p>ROCKETS</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h2>
+                            <span id="count4"></span>+
+                        </h2>
+                        <p>GLOBES</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!--section 3 about-->
+    <section id="about">
+        <div class="about-section wrapper">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
+                        <div class="card border-0">
+                            <img src="../Images/food items/img15.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 text-sec">
+                        <h2>Experience the Culinary Journey of a Lifetime</h2>
+                        <p>a celebration of flavors and memories, designed to captivate your senses and satisfy your
+                            soul. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc at cursus
+                            pellentesque, nisl eros pellentesque quam, a faucibus nisl nunc id nisl.</p>
+                        <button type="button" class="btn btn-danger btn-md">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container food-type">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
+                        <h2>We Make everything with pure hands and love with the best possible items</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc at cursus
+                            pellentesque, nisl eros pellentesque quam, a faucibus nisl risus id nisi. Sed auctor, nunc
+                            ac cursus lacinia, nisl eros pellentesque quam, a faucibus nisl risus id nisi.</p>
+
+                        <ul class="list-unstyled py-3">
+                            <li>Savor the Flavors of the World at Your Table</li>
+                            <li>Where Every Dish is a Journey to Satisfaction</li>
+                            <li>Experience Gastronomic Adventures Beyond Your Wildest Dreams</li>
+                            <li>Dine with Us and Let Your Palate Dance</li>
+                        </ul>
+                        <button type="button" class="btn btn-danger btn-md">Learn More</button>
+                    </div>
+                    <div class="col-lg-7 col-md-12">
+                        <div class="card border-0">
+                            <img src="../Images/food items/img4.jpg" class="img-fluid" style="transform: scale(70%);">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--section 3 story-->
+
+    <section id="story">
+        <div class="story-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-content">
+                            <h2>Experience the Magic of Fine Dining at Our Restaurant</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc at cursus
+                                pellentesque, nisl eros pellentesque quam, a faucibus nisl risus id nisi. Sed auctor,
+                                nunc ac cursus lacinia, nisl eros pellentesque quam, a faucibus nisl risus id nisi.</p>
+                            <button type="button" class="btn btn-primary main-btn mt-3">Read more</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--section 4 explore foods-->
+    <section id="explore-food">
+        <div class="explore-food wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-content text-center">
+                            <h2>Where Every Bite Tells a Story</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc at cursus
+                                pellentesque, nisl eros pellentesque quam, a faucibus nisl risus id nisi. Sed auctor,
+                                nunc ac cursus lacinia, nisl eros pellentesque quam, a faucibus nisl risus id nisi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-5">
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="../Images/food items/img1.jpg" class="img-fluid" style="height: 500px;">
+                            <div class="pt-3">
+                                <h4>Veg mix with malai</h4>
+                                <p>time: 20-30 Minutes | Serves:1</p>
+                                <span>200rs <del>250rs</del></span>
+                                <button type="button" class="btn btn-primary main-btn mt-3">Order</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="../Images/food items/img2.jpg" class="img-fluid" style="height: 500px;">
+                            <div class="pt-3">
+                                <h4>Royal chicken Xacuti</h4>
+                                <p>time: 20-30 Minutes | Serves:1</p>
+                                <span>250rs <del>350rs</del></span>
+                                <button type="button" class="btn btn-primary main-btn mt-3">Order</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="../Images/food items/img16.jpg" class="img-fluid" style="height: 500px;">
+                            <div class="pt-3">
+                                <h4>Tomato Soup</h4>
+                                <p>time: 10-15 Minutes | Serves:1</p>
+                                <span>90rs <del>140rs</del></span>
+                                <button type="button" class="btn btn-primary main-btn mt-3">Order</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="../Images/food items/img13.jpg" class="img-fluid">
+                            <div class="pt-3">
+                                <h4>Japanese special soup</h4>
+                                <p>time: 15-30 Minutes | Serves:1</p>
+                                <span>500rs <del>750rs</del></span>
+                                <button type="button" class="btn btn-primary main-btn mt-3">Order</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="../Images/food items/img12.jpg" class="img-fluid">
+                            <div class="pt-3">
+                                <h4>Kofta masala special</h4>
+                                <p>time: 20-30 Minutes | Serves:1</p>
+                                <span>250rs <del>350rs</del></span>
+                                <button type="button" class="btn btn-primary main-btn mt-3">Order</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="../Images/food items/img14.jpg" class="img-fluid">
+                            <div class="pt-3">
+                                <h4>Italin salad</h4>
+                                <p>time: 30-45 Minutes | Serves:1</p>
+                                <span>400rs <del>600rs</del></span>
+                                <button type="button" class="btn btn-primary main-btn mt-3">Order</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="../Images/food items/img5.jpg" class="img-fluid" style="height: 500px;">
+                            <div class="pt-3">
+                                <h4>All pizzas</h4>
+                                <p>time: 45-50 Minutes | Serves:1</p>
+                                <span>250 - 500rs <del>500 - 750rs</del></span>
+                                <button type="button" class="btn btn-primary main-btn mt-3">Order</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="../Images/food items/img7.jpg" class="img-fluid" style="height: 500px;">
+                            <div class="pt-3">
+                                <h4>Bugers</h4>
+                                <p>time: 20-30 Minutes | Serves:1</p>
+                                <span>200rs <del>250 - 350rs</del></span>
+                                <button type="button" class="btn btn-primary main-btn mt-3">Order</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="../Images/food items/img10.jpg" class="img-fluid" style="height: 500px;">
+                            <div class="pt-3">
+                                <h4>traditional Indians</h4>
+                                <p>time: 30-45 Minutes | Serves:1</p>
+                                <span>300rs <del>500rs</del></span>
+                                <button type="button" class="btn btn-primary main-btn mt-3">Order</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonal section-5-->
+
+
+
+    <!--Section-6 faq-->
+    <section id="faq">
+        <div class="faq wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-center pb-4">
+                            <h2>Frequently asked questions</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-sm-6 mb-4">
+                        <h4><span>~</span>What are your opening hours?</h4>
+                        <p>Our restaurant is open from 11:00 AM to 11:00 PM, seven days a week. We are closed on major
+                            holidays.</p>
+                    </div>
+
+                    <div class="col-sm-6 mb-4">
+                        <h4><span>~</span>Do you have a special menu for dietary restrictions?</h4>
+                        <p>Yes, we can accommodate various dietary restrictions. Please inform our staff of any specific
+                            dietary needs or restrictions when placing your order.</p>
+                    </div>
+
+                    <div class="col-sm-6 mb-4">
+                        <h4><span>~</span>Do you have a children's menu?</h4>
+                        <p>Yes, we have a children's menu with a variety of dishes suitable for younger guests. Please
+                            ask our staff for more information</p>
+                    </div>
+
+                    <div class="col-sm-6 mb-4">
+                        <h4><span>~</span>How do you prepare your dishes?</h4>
+                        <p>Our chefs use traditional recipes and innovative techniques to prepare each dish. We believe
+                            in the art of cooking and strive to bring out the best in every ingredient.</p>
+                    </div>
+
+                    <div class="col-sm-6 mb-4">
+                        <h4><span>~</span> How do you ensure food safety and hygiene?</h4>
+                        <p>We adhere to strict food safety and hygiene standards. Our kitchen staff is trained in proper
+                            food handling and preparation techniques. We also regularly sanitize our premises and
+                            equipment.</p>
+                    </div>
+
+                    <div class="col-sm-6 mb-4">
+                        <h4><span>~</span>Do you offer any vegetarian or vegan options?</h4>
+                        <p>Yes, we have a selection of vegetarian and vegan dishes on our menu. Please check our menu
+                            for specific options.</p>
+                    </div>
+
+                    <div class="col-sm-6 mb-4">
+                        <h4><span>~</span>. Do you offer any special promotions or discounts?</h4>
+                        <p>Yes, we occasionally offer special promotions and discounts. Please check our website or
+                            contact us for the most current deals and promotions.</p>
+                    </div>
+
+                    <div class="col-sm-6 mb-4">
+                        <h4><span>~</span>. Is there parking available?</h4>
+                        <p>Yes, we have ample parking available. Please inform our staff if you require assistance with
+                            parking. </p>
+                    </div>
+
+                    <div class="col-sm-6 mb-4">
+                        <h4><span>~</span>. Do you offer catering services?</h4>
+                        <p>Yes, we offer catering services for private events, corporate functions, and special
+                            occasions. Please contact us for more details and to place an order.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section 7 book food-->
+    <section id="book-food">
+        <div class="book-food">
+            <div class="container book-food-text">
+                <div class="row text-center">
+                    <div class="col-lg-9 col-md-12">
+                        <h2>Immerse Yourself in a Culinary Odyssey at Our Establishment</h2>
+                    </div>
+                    <div class="col-lg-3 col-md-12 mt-lg-0 mt-4">
+                        <button type="button" class="btn btn-info">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section 8 subs-->
+    <section id="subs">
+        <div class="subs wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="sol-sm-12">
+                        <div class="text-content text-center pb-4">
+                            <h2>Hurry up! Subscribe to our Annual membership and get enjoy the benefits</h2>
+                            <p>Limited period offer , No credit card required. Hurry up!</p>
+                            <h6>
+                                <p>Terms and conditions applied</p>
+                            </h6>
+                        </div>
+                        <form class="subs">
+                            <div class="row">
+                                <div class="col-md-8 col-12">
+                                    <input class="form-control" placeholder="Enter Email Address" name="email"
+                                        type="email">
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <button type="button" class="btn btn-info btn-lg">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <h5>Contact Us</h5>
+                    <p>123 Main Street, Anytown, USA</p>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2023 Your Company. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Js libraries-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!--js file-->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
